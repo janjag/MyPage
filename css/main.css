@@ -1,0 +1,165 @@
+/**** All sizes are in px for now, after seting up all elements will convert it to something more responsive  ****/
+
+/**** Colors
+light-blue: rgb(47,118,239);
+dark-blue: rgb(15,79,189);
+grey: #ddd;
+****/
+
+/****  Reset default  ****/
+body, h1, h2, h3, ul, li, p, img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a, q, article {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/****  Global  ****/
+html { 
+    background: url(../img/bacground1080p.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 100%;
+}
+
+body {
+    position: relative;
+    width: 1080px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+/**** Top-bar ****/
+#top-bar {
+    position: relative;
+    height: 111px;
+    margin-bottom: 1.5%;
+}
+
+/****  Logo  ****/
+.logo {
+    background: url(../img/logo-slide.png);
+    display: inline-block;
+    height: 101px;
+    width: 553px;
+    float: left;
+    margin: 2px 20px 5px 5px;
+}
+
+.logo:hover,
+.logo:focus {
+    background-position: 0 -101px;
+}
+
+/**** Quote  ****/
+q {
+    position: relative;
+    float: right;
+    width: 375px;
+    height: 55px;
+    font-size: 125%;
+    font-style: italic;
+    text-align: justify;
+}
+
+q strong {
+    position: absolute;
+    right: 0;
+    bottom: 0;   
+}
+
+/****  Left-bar  ****/
+#left-bar {
+    float: left;
+    width = 25px;
+    min-height: 101px;
+    margin-right: 20px;
+    background-color: rgba(47,118,239,0.1);
+}
+
+#left-bar div {
+    display: inline-block;
+}
+
+/****  Navigation  ****/
+.nav {
+    width: 160px;
+    float: left;
+    display: inline-block;
+    font-size: 150%;
+    text-align: left;
+}
+.nav-off {
+    display: none;
+}
+
+.nav-toggle {
+    display: inline;
+    width: 25px;
+    min-height: 99px;
+    margin: auto 0;
+    background: url(../img/menu-slide.png);
+    background-position: -25px 0;
+    float: right;
+    border: 0;
+}
+
+
+.nav ul li a {
+    color: rgb(47,118,239);
+    padding: 2% 10%;
+}
+
+.nav ul li a:hover {
+    color: rgb(15,79,189);
+    background-color: #ddd;
+}
+
+/****  Float clear  ****/
+.no-float {
+    clear: both;
+    margin: 1.5% 0;
+}
+
+/**** Content  ****/
+.content {
+    width: auto;
+}
+
+/**** Footer  ****/
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(15,79,189,0.9);
+    text-align: center;
+    border-radius: 18px;
+}
+
+footer a:hover,
+#footer-nav li a:hover {
+    color: #eee;
+    text-decoration: underline;
+}
+
+footer,
+footer p a,
+#footer-nav a{
+    color: #ddd;
+    font-weight: 600;
+    margin: 3px 5px;
+}
+
+#footer-nav li{
+    display: inline-block;
+}
