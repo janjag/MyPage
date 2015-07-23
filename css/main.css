@@ -3,7 +3,7 @@
 /**** Colors
 light-blue: rgb(47,118,239);
 dark-blue: rgb(15,79,189);
-grey: #ddd;
+grey: #ddd, #eee;
 ****/
 
 /****  Reset default  ****/
@@ -25,7 +25,7 @@ a, q, article {
 
 /****  Global  ****/
 html { 
-    background: url(../img/bacground1080p.jpg) no-repeat center center fixed; 
+    background: url(../static/img/bacground1080p.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -49,7 +49,7 @@ body {
 
 /****  Logo  ****/
 .logo {
-    background: url(../img/logo-slide.png);
+    background: url(../static/img/logo-slide.png);
     display: inline-block;
     height: 101px;
     width: 553px;
@@ -109,12 +109,15 @@ q strong {
     width: 25px;
     min-height: 99px;
     margin: auto 0;
-    background: url(../img/menu-slide.png);
+    background: url(../static/img/menu-slide.png);
     background-position: -25px 0;
     float: right;
     border: 0;
 }
 
+.nav-toggle-swith {
+    background-position: 0 0;
+}
 
 .nav ul li a {
     color: rgb(47,118,239);
@@ -133,7 +136,7 @@ q strong {
 }
 
 /**** Content  ****/
-.content {
+#content {
     width: auto;
 }
 

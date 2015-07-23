@@ -1,12 +1,26 @@
 //Nav toggle button
-"use strict"
+
 var navToggleButton = function () {
-    $('.nav-toggle').on('click', 'button', function() {
+    $('.nav-toggle').on('click', function () {
         $('.nav').toggleClass('nav-off');
+        $('.nav-toggle').toggleClass('nav-toggle-swith');
     });
 }
 
-$(document).ready(function() {
+//Simple sub page loading mechanism
+
+var subPageLoader = function () {
+    $('ul li a').on('click', function () {
+    var subPage = $(this).attr('href');
+    $('#content').load(subPage);
+    return false;
+    });
     
+}
+
+
+$(document).ready(function () {
+    $('#content').load('subpage/about.html');
+    subPageLoader();
     navToggleButton();
 });
