@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "0.1.0",
+  "description": "early version",
+  "main": "static.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janjag/MyPage.git"
+  },
+  "author": "Jan Jagieła",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janjag/MyPage/issues"
+  },
+  "homepage": "https://github.com/janjag/MyPage#readme"
+}

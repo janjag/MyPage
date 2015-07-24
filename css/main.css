@@ -23,7 +23,7 @@ a, q, article {
 }
 
 
-/****  Global  ****/
+/****  Global & Fonts faces ****/
 html { 
     background: url(../static/img/bacground1080p.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -31,6 +31,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     font-size: 100%;
+    font-family: 'droid_sans_monoregular', sans-serif;
 }
 
 body {
@@ -38,6 +39,10 @@ body {
     width: 1080px;
     min-height: 100%;
     margin: 0 auto;
+}
+
+h1, h2, h3, .nav {
+    font-family: 'cinzel_decorativeregular', serif;
 }
 
 /**** Top-bar ****/
@@ -67,51 +72,54 @@ q {
     position: relative;
     float: right;
     width: 375px;
-    height: 55px;
-    font-size: 125%;
+    height: 65px;
     font-style: italic;
-    text-align: justify;
+    text-align: left;
 }
 
 q strong {
     position: absolute;
-    right: 0;
+    right: 5px;
     bottom: 0;   
 }
 
 /****  Left-bar  ****/
 #left-bar {
+    position: relative;
     float: left;
-    width = 25px;
+    width = auto;
     min-height: 101px;
     margin-right: 20px;
-    background-color: rgba(47,118,239,0.1);
-}
-
-#left-bar div {
-    display: inline-block;
+    background-color: rgba(47,118,239,0.2);
 }
 
 /****  Navigation  ****/
 .nav {
-    width: 160px;
-    float: left;
+    width: auto;
+    height: 100%;
+    padding-right: 25px;
     display: inline-block;
+    font-weight: 700;
     font-size: 150%;
+    letter-spacing: -1.5%;
     text-align: left;
+    z-index: 10;
 }
+
 .nav-off {
     display: none;
 }
 
 .nav-toggle {
-    display: inline;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    display: inline-block;
     width: 25px;
-    min-height: 99px;
-    margin: auto 0;
+    height: 100px;
     background: url(../static/img/menu-slide.png);
     background-position: -25px 0;
-    float: right;
     border: 0;
 }
 
@@ -121,23 +129,27 @@ q strong {
 
 .nav ul li a {
     color: rgb(47,118,239);
-    padding: 2% 10%;
+    padding: 5px 8px;
 }
 
 .nav ul li a:hover {
     color: rgb(15,79,189);
     background-color: #ddd;
+    border-radius: 6px;
 }
 
 /****  Float clear  ****/
 .no-float {
     clear: both;
-    margin: 1.5% 0;
 }
 
 /**** Content  ****/
 #content {
     width: auto;
+    background-color: rgba(47,118,239,0.1);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
 }
 
 /**** Footer  ****/
@@ -147,6 +159,7 @@ footer {
     background-color: rgba(15,79,189,0.9);
     text-align: center;
     border-radius: 18px;
+    
 }
 
 footer a:hover,
@@ -160,7 +173,7 @@ footer p a,
 #footer-nav a{
     color: #ddd;
     font-weight: 600;
-    margin: 3px 5px;
+    margin: 3px 2px;
 }
 
 #footer-nav li{

@@ -1,8 +1,9 @@
 //Nav toggle button
+"use strict"
 
 var navToggleButton = function () {
     $('.nav-toggle').on('click', function () {
-        $('.nav').toggleClass('nav-off');
+        $('.nav').find('li').toggleClass('nav-off');
         $('.nav-toggle').toggleClass('nav-toggle-swith');
     });
 }
