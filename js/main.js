@@ -4,6 +4,7 @@
 var navToggleButton = function () {
     $('.nav-toggle').on('click', function () {
         $('.nav').find('li').toggleClass('nav-off');
+        $('.content').toggleClass('content-wide');
         $('.nav-toggle').toggleClass('nav-toggle-swith');
     });
 }
@@ -13,7 +14,7 @@ var navToggleButton = function () {
 var subPageLoader = function () {
     $('ul li a').on('click', function () {
     var subPage = $(this).attr('href');
-    $('#content').load(subPage);
+    $('.content').load(subPage);
     return false;
     });
     
@@ -21,7 +22,7 @@ var subPageLoader = function () {
 
 
 $(document).ready(function () {
-    $('#content').load('subpage/about.html');
+    $('.content').load('subpage/about.html');
     subPageLoader();
     navToggleButton();
 });

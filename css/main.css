@@ -7,7 +7,7 @@ grey: #ddd, #eee;
 ****/
 
 /****  Reset default  ****/
-body, h1, h2, h3, ul, li, p, img {
+body, h1, h2, h3, ul, li, p, article, img {
     border: 0;
     margin: 0;
     padding: 0;
@@ -44,12 +44,12 @@ body {
 h1, h2, h3, .nav {
     font-family: 'cinzel_decorativeregular', serif;
 }
-
-/**** Top-bar ****/
+/****  Index file  ****/
+/****  Top-bar  ****/
 #top-bar {
     position: relative;
     height: 111px;
-    margin-bottom: 1.5%;
+    margin-bottom: 15px;
 }
 
 /****  Logo  ****/
@@ -86,11 +86,15 @@ q strong {
 /****  Left-bar  ****/
 #left-bar {
     position: relative;
+    display: inline-block;
     float: left;
-    width = auto;
+    width: auto;
+    max-width: 180px;
     min-height: 101px;
-    margin-right: 20px;
     background-color: rgba(47,118,239,0.2);
+}
+.float {
+    position: fixed;
 }
 
 /****  Navigation  ****/
@@ -101,7 +105,7 @@ q strong {
     display: inline-block;
     font-weight: 700;
     font-size: 150%;
-    letter-spacing: -1.5%;
+    letter-spacing: -2px;
     text-align: left;
     z-index: 10;
 }
@@ -144,17 +148,19 @@ q strong {
 }
 
 /**** Content  ****/
-#content {
-    width: auto;
-    background-color: rgba(47,118,239,0.1);
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
-    border-top-right-radius: 18px;
+.content {
+    float: right;
+    position: relative;
+    display: inline-block;
+    width: 900px;
+    min-height: 150px;
+}
+.content-wide {
+    width: 1050px;
 }
 
 /**** Footer  ****/
 footer {
-    position: absolute;
     width: 100%;
     background-color: rgba(15,79,189,0.9);
     text-align: center;
@@ -173,9 +179,26 @@ footer p a,
 #footer-nav a{
     color: #ddd;
     font-weight: 600;
-    margin: 3px 2px;
+    margin: 2px;
 }
 
 #footer-nav li{
     display: inline-block;
+}
+
+/**** About page  ****/
+.left-col,
+.right-col {
+    width: 46.5%;
+    text-align: justify;
+    margin: 5px 0 15px 5px;
+}
+.left-col {
+    margin-right: 20px;
+}
+.foto {
+    width: 99%;
+    height: auto;
+    margin-bottom: 3px;
+    border: 2px solid rgb(15,79,189);
 }
