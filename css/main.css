@@ -33,11 +33,13 @@ html {
     font-size: 100%;
     font-family: 'droid_sans_monoregular', sans-serif;
 }
-
 body {
+    min-height: 100%;
+}
+
+#content {
     position: relative;
     width: 1080px;
-    min-height: 100%;
     margin: 0 auto;
 }
 
@@ -48,8 +50,9 @@ h1, h2, h3, .nav {
 /****  Top-bar  ****/
 #top-bar {
     position: relative;
+    width: 1080px;
     height: 111px;
-    margin-bottom: 15px;
+    margin: 15px auto;
 }
 
 /****  Logo  ****/
@@ -145,6 +148,7 @@ q strong {
 /****  Float clear  ****/
 .no-float {
     clear: both;
+    margin: 15px;
 }
 
 /**** Content  ****/
@@ -152,7 +156,7 @@ q strong {
     float: right;
     position: relative;
     display: inline-block;
-    width: 900px;
+    width: 910px;
     min-height: 150px;
 }
 .content-wide {
@@ -162,10 +166,10 @@ q strong {
 /**** Footer  ****/
 footer {
     width: 100%;
+    height: 85px;
+    font-size: 80%;
     background-color: rgba(15,79,189,0.9);
     text-align: center;
-    border-radius: 18px;
-    
 }
 
 footer a:hover,
@@ -189,8 +193,10 @@ footer p a,
 /**** About page  ****/
 .left-col,
 .right-col {
+    vertical-align: top;
     width: 46.5%;
     text-align: justify;
+    line-height: 150%;
     margin: 5px 0 15px 5px;
 }
 .left-col {
@@ -201,4 +207,5 @@ footer p a,
     height: auto;
     margin-bottom: 3px;
     border: 2px solid rgb(15,79,189);
+    border-radius: 10%;
 }
