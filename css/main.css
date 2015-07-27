@@ -40,7 +40,11 @@ body {
 #content {
     position: relative;
     width: 1080px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
+    background-color: rgba(249,249,249,0.5);
+    border: 2px solid rgb(15,79,189);
+    border-radius: 5px;
+    box-shadow: 0 10px 30px 10px #aaa;
 }
 
 h1, h2, h3, .nav {
@@ -51,8 +55,8 @@ h1, h2, h3, .nav {
 #top-bar {
     position: relative;
     width: 1080px;
-    height: 111px;
-    margin: 15px auto;
+    height: 120px;
+    margin: 0 auto 20px;
 }
 
 /****  Logo  ****/
@@ -76,6 +80,7 @@ q {
     float: right;
     width: 375px;
     height: 65px;
+    font-size: 90%;
     font-style: italic;
     text-align: left;
 }
@@ -91,6 +96,8 @@ q strong {
     position: relative;
     display: inline-block;
     float: left;
+    left: 1px;
+    top: 1px;
     width: auto;
     max-width: 180px;
     min-height: 101px;
@@ -157,7 +164,7 @@ q strong {
     position: relative;
     display: inline-block;
     width: 910px;
-    min-height: 150px;
+    margin-bottom: 100px;
 }
 .content-wide {
     width: 1050px;
@@ -165,6 +172,8 @@ q strong {
 
 /**** Footer  ****/
 footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
     height: 85px;
     font-size: 80%;
@@ -208,4 +217,30 @@ footer p a,
     margin-bottom: 3px;
     border: 2px solid rgb(15,79,189);
     border-radius: 10%;
+}
+
+/**** Contact page  ****/
+.contact li,
+.contact a,
+.contact strong,
+.social li,
+.social a,
+.social strong {
+    display: block;
+}
+.contact i,
+.social i {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 72px;
+    height: 72px;
+    text-align: center;
+}
+
+.contact li,
+.social li {
+    padding: 0 0 10px 15px;
+    width: 85%;
+    height: 72px;
 }
