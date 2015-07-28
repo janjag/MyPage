@@ -20,7 +20,6 @@ var subPageLoader = function () {
     
 }
 
-
 $(document).ready(function () {
     $('.content').load('subpage/about.html');
     subPageLoader();
