@@ -17,7 +17,7 @@ ul {
     list-style: none;
 }
 
-a, q, article {
+a, q, article, section {
     display: inline-block;
     text-decoration: none;
 }
@@ -25,7 +25,7 @@ a, q, article {
 
 /****  Global & Fonts faces ****/
 html { 
-    background: url(../static/img/bacground1080p.jpg) no-repeat center center fixed; 
+    background: url(../static/img/bacground1080p-2.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -43,10 +43,10 @@ body {
     position: relative;
     width: 1080px;
     margin: 0 auto 50px auto;
-    background-color: rgba(249,249,249,0.66);
+    background-color: rgba(249,249,249,0.57);
     border: 2px solid rgb(15,79,189);
     border-radius: 5px;
-    box-shadow: 0 10px 30px 10px #aaa;
+    box-shadow: 0 10px 30px 15px #ccc;
 }
 
 h1, h2, h3, .nav {
@@ -82,6 +82,7 @@ q {
     float: right;
     width: 300px;
     height: 65px;
+    color: #ddd;
     font-size: 90%;
     font-style: italic;
     text-align: left;
@@ -157,7 +158,6 @@ q strong {
 /****  Float clear  ****/
 .no-float {
     clear: both;
-    margin: 15px;
 }
 
 /**** Content  ****/
@@ -166,7 +166,6 @@ q strong {
     position: relative;
     display: inline-block;
     width: 910px;
-    margin-bottom: 100px;
     perspective: 1000px;
     text-align: center;
 }
@@ -196,7 +195,7 @@ footer p a,
 #footer-nav a{
     color: #ddd;
     font-weight: 600;
-    margin: 2px;
+    padding: 2px;
 }
 
 #footer-nav li{
@@ -227,7 +226,6 @@ footer p a,
 .card {
     position: relative;
     display: inline-block;
-    z-index: 5;
     width: 270px;
     height: 350px;
     margin: 25px 10px;
