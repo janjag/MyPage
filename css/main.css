@@ -7,6 +7,10 @@ grey: #ddd, #eee;
 ****/
 
 /****  Reset default  ****/
+* {
+    box-sizing: border-box;
+}
+
 body, h1, h2, h3, ul, li, p, article, img {
     border: 0;
     margin: 0;
@@ -30,67 +34,66 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-size: 100%;
-    font-family: 'droid_sans_monoregular', sans-serif;
+    font-size: 110%; /* 17,6 px = 1em */
+    font-family: 'latolight', sans-serif;
 }
 body {
     position: relative;
     min-height: 100%;
-    padding-bottom: 90px;
+    padding-bottom: 5.11364em;
 }
 
 #content {
     position: relative;
-    width: 1080px;
-    margin: 0 auto 50px auto;
-    background-color: rgba(249,249,249,0.57);
-    border: 2px solid rgb(15,79,189);
-    border-radius: 5px;
-    box-shadow: 0 10px 30px 15px #ccc;
+    width: 61.36364em; /* ~1080px */
+    margin: 0 auto 2.84091em auto;
+    background-color: rgba(249,249,249,0.77);
+    border: 0.11364em solid rgb(15,79,189);
+    border-radius: 0.28409em;
+    box-shadow: 0 0.56819em 1.70455em 0.85228em #ccc;
 }
 
 h1, h2, h3, .nav {
-    font-family: 'cinzel_decorativeregular', serif;
+    font-family: 'droid_serifbold', serif;
 }
 /****  Index file  ****/
 /****  Top-bar  ****/
 #top-bar {
     position: relative;
-    width: 1080px;
-    height: 120px;
-    margin: 0 auto 20px;
+    width: 61.36364em;
+    height: 6.81818em;
+    margin: 0 auto 1.13634em;
 }
 
 /****  Logo  ****/
 .logo {
     background: url(../static/img/logo-slide.png);
     display: inline-block;
-    height: 101px;
-    width: 553px;
+    height: 5.73864em;
+    width: 31.42046em;
     float: left;
-    margin: 2px 20px 5px 5px;
+    margin: 0.11364em 1.13634em 0.28409em 0.28409em;
 }
 
 .logo:hover,
 .logo:focus {
-    background-position: 0 -101px;
+    background-position: 0 -5.73864em;
 }
 
 /**** Quote  ****/
 q {
     position: relative;
     float: right;
-    width: 300px;
-    height: 65px;
+    width: 17.04545em;
+    height: 3.69312em;
     color: #ddd;
-    font-size: 90%;
     font-style: italic;
     text-align: left;
 }
 
 q strong {
     position: absolute;
-    right: 5px;
+    right: 0.28409em;
     bottom: 0;   
 }
 
@@ -99,11 +102,11 @@ q strong {
     position: relative;
     display: inline-block;
     float: left;
-    left: 1px;
-    top: 1px;
+    left: 0.05682em;
+    top: 0.05682em;
     width: auto;
-    max-width: 180px;
-    min-height: 101px;
+    max-width: 10.22728em;
+    min-height: 5.73864em;
     background-color: rgba(47,118,239,0.2);
 }
 .float {
@@ -114,11 +117,10 @@ q strong {
 .nav {
     width: auto;
     height: 100%;
-    padding-right: 25px;
+    padding-right: 1.42046em;
     display: inline-block;
-    font-weight: 700;
-    font-size: 150%;
-    letter-spacing: -2px;
+    font-size: 1.5em;
+    letter-spacing: -0.11364em;
     text-align: left;
     z-index: 10;
 }
@@ -129,14 +131,15 @@ q strong {
 
 .nav-toggle {
     position: absolute;
+    z-index: 100;
     right: 0;
     top: 50%;
-    margin-top: -50px;
+    margin-top: -2.84091em;
     display: inline-block;
-    width: 25px;
-    height: 100px;
-    background: url(../static/img/menu-slide.png);
-    background-position: -25px 0;
+    width: 1.42045em;
+    height: 100%;
+    background: url(../static/img/menu-slide.png) center center no-repeat;
+    background-position: -1.42046em 0;
     border: 0;
 }
 
@@ -146,13 +149,13 @@ q strong {
 
 .nav ul li a {
     color: rgb(47,118,239);
-    padding: 5px 8px;
+    padding: 0.22727em 0.45454em;
 }
 
 .nav ul li a:hover {
     color: rgb(15,79,189);
     background-color: #ddd;
-    border-radius: 6px;
+    border-radius: 0.3409em;
 }
 
 /****  Float clear  ****/
@@ -165,12 +168,12 @@ q strong {
     float: right;
     position: relative;
     display: inline-block;
-    width: 910px;
-    perspective: 1000px;
+    width: 51.70455em; /* ~910px */
+    perspective: 56.81818em; /* ~1000px */
     text-align: center;
 }
 .content-wide {
-    width: 1050px;
+    width: 59.0909em; /* ~1040px */
 }
 
 /**** Footer  ****/
@@ -178,8 +181,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 85px;
-    font-size: 80%;
+    height: 4.82955em;
     background-color: rgba(15,79,189,0.9);
     text-align: center;
 }
@@ -194,8 +196,7 @@ footer,
 footer p a,
 #footer-nav a{
     color: #ddd;
-    font-weight: 600;
-    padding: 2px;
+    padding: 0.11364em;
 }
 
 #footer-nav li{
@@ -208,17 +209,17 @@ footer p a,
     vertical-align: top;
     width: 46.5%;
     text-align: justify;
-    line-height: 150%;
-    margin: 5px 0 15px 5px;
+    line-height: 1.5em;
+    margin: 0.28409em 0 0.85227em 0.28409em;
 }
 .left-col {
-    margin-right: 20px;
+    margin-right: 1.13636em;
 }
 .foto {
     width: 99%;
     height: auto;
-    margin-bottom: 3px;
-    border: 2px solid rgb(15,79,189);
+    margin-bottom: 0.28409em;
+    border: 0.14204em solid rgb(15,79,189);
     border-radius: 10%;
 }
 /**** Skillz page  ****/
@@ -226,13 +227,13 @@ footer p a,
 .card {
     position: relative;
     display: inline-block;
-    width: 270px;
-    height: 350px;
-    margin: 25px 10px;
+    width: 15.3409em; /* 270px */
+    height: 19.88636em; /* 350px */
+    margin: 1.42045em 0.56818em;
     overflow: hidden;
-    border: 2px solid rgb(15,79,189);
-    border-radius: 5px;
-    box-shadow: 0 2px 30px 8px #aaa;
+    border: 0.11364em solid rgb(15,79,189);
+    border-radius: 0.28409em;
+    box-shadow: 0 0.11364em 1.70454em 0.45454em #aaa;
     text-align: center;
     transform: rotateY(-10deg);
     -webkit-transform: rotateY(-10deg);
@@ -246,7 +247,7 @@ footer p a,
     -o-transform: rotateY(10deg);
 }
 .card:hover {
-    box-shadow: 0 0 6px 4px #aaa inset;
+    box-shadow: 0 0 0.3409em 0.22727em #aaa inset;
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;
@@ -256,8 +257,8 @@ footer p a,
 .card img {
     display: block;
     width: auto;
-    height: 200px;
-    margin: 3px auto 10px auto;
+    height: 11.36363em;
+    margin: 0.17045em auto 0.56818em auto;
 }
 
 /**** Contact page  ****/
@@ -273,15 +274,13 @@ footer p a,
 .social i {
     display: block;
     float: left;
-    margin-right: 10px;
-    width: 72px;
-    height: 72px;
+    width: 1em;
+    margin-right: 0.2em;
     text-align: center;
 }
 
 .contact li,
 .social li {
-    padding: 0 0 10px 15px;
-    width: 85%;
-    height: 72px;
+    padding: 0 0 0.56818em 0.85227em;
+    height: 4.0909em;
 }
